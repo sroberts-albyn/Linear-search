@@ -1,0 +1,40 @@
+#linear search
+#Sarah Roberts
+#30/09//24
+
+#Task 1
+
+total = 0
+number = 0
+OwnsAnIPhone = ['yes', 'no', 'no', 'no', 'yes', 'yes', 'yes', 'yes']
+
+for i in range(len(OwnsAnIPhone)):
+    if OwnsAnIPhone[number] == 'yes':
+        total = total + 1
+    number = number + 1
+
+print(total, 'people own an IPhone')
+
+#Task 2
+
+number = 0
+PetPurchased = ['dog', 'dog', 'cat', 'rabbit', 'hamster', 'cat', 'hamster', 'budgie']
+
+for i in range(len(PetPurchased)):
+    if PetPurchased[number] == 'hamster':
+        user = number + 1
+    number = number + 1
+    
+print('user', user, 'was the last to purchase a hamster')
+
+#Task 3
+
+users = []
+number = 0
+PetPurchased = ['dog', 'dog', 'cat', 'rabbit', 'hamster', 'cat', 'hamster', 'budgie']
+
+for i in range(len(PetPurchased)):
+    if PetPurchased[number] == 'hamster':
+        print('user', number + 1, 'bought a hamster')
+    number = number + 1
+
